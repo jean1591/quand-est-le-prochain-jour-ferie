@@ -14,5 +14,9 @@ const months = [
 ];
 
 export const formatDateToHumanDate = (date: Date): string => {
-  return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+  return `${date.getDate().toString().padStart(2, "0")} ${months[date.getMonth()]} ${date.getFullYear()}`;
+};
+
+export const getMonthFromDate = (date: Date): string => {
+  return months[date.getMonth()];
 };

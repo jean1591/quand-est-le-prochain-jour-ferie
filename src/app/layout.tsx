@@ -1,6 +1,5 @@
 import "./globals.css";
 
-import { Hero } from "./component/Hero";
 import { Inter } from "next/font/google";
 import { classNames } from "@/utils";
 
@@ -13,11 +12,9 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={classNames(inter.className, "bg-green-50/10 text-green-950")}
+        className={classNames(inter.className, "bg-green-50/25 text-green-900")}
       >
-        <Hero />
-
-        <div className="my-16 mx-auto max-w-5xl">{children}</div>
+        <div className="my-16 px-4 sm:px-0 mx-auto max-w-5xl">{children}</div>
       </body>
     </html>
   );
