@@ -37,9 +37,9 @@ export default function Home() {
                 className={classNames(
                   isPast(date)
                     ? "text-slate-500"
-                    : "text-green-800 hover:text-green-950",
-                  isSameDay(nextBankHoliday.date, date) ? "bg-green-50/75" : "",
-                  "flex items-center justify-between border-b border-green-950 py-4"
+                    : "text-blue-800 hover:text-blue-950",
+                  isSameDay(nextBankHoliday.date, date) ? "bg-blue-50/75" : "",
+                  "flex items-center justify-between border-b border-blue-950 py-4"
                 )}
               >
                 <div>

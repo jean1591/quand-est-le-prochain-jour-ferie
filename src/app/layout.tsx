@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={classNames(inter.className, "bg-green-50/25 text-green-900")}
+        className={classNames(inter.className, "bg-blue-50/25 text-blue-900")}
       >
         <div className="my-16 px-4 sm:px-0 mx-auto max-w-5xl">{children}</div>
       </body>
