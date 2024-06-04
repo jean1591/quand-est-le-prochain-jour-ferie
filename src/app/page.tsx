@@ -22,7 +22,6 @@ export default function Home() {
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
-        {/* NEXT BANK HOLIDAY */}
         <div>
           <NextBankHoliday nextBankHoliday={nextBankHoliday} />
         </div>

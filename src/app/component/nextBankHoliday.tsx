@@ -39,7 +39,7 @@ export const NextBankHoliday = ({
       <div
         className="from-blue-900 to-blue-700 text-blue-50 mt-16 rounded-b-2xl bg-gradient-to-r py-2"
       >
-        <p className="p-4 uppercase text-md font-medium text-center">{`${
+        <p className="p-4 uppercase text-xl font-medium text-center">{`${
           happensDuringAWeekend ? "Pendant" : "En dehors d'"
         } un week-end`}</p>
       </div>
