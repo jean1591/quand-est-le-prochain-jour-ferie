@@ -21,19 +21,16 @@ export default function Home() {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
-      <div>
-        <NextBankHoliday nextBankHoliday={nextBankHoliday} />
-      </div>
+      <NextBankHoliday nextBankHoliday={nextBankHoliday} />
 
-      {/* DETAILS */}
       <div>
         {bankHolidays[currentYear].map(({ date, description }) => (
           <div
             key={date.toString()}
             className={classNames(
               isPast(date)
-                ? "text-slate-500"
-                : "text-blue-800 hover:text-blue-950",
+                ? "text-slate-400"
+                : "text-blue-800",
               isSameDay(nextBankHoliday.date, date) ? "bg-blue-50/75" : "",
               "flex items-center justify-between border-b border-blue-950 py-4"
             )}
