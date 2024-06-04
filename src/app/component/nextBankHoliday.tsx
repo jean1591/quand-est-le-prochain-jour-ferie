@@ -1,28 +1,17 @@
-import { bankHolidays, classNames, getMonthFromDate } from "@/utils";
-import { differenceInDays, isPast, isWeekend } from "date-fns";
+import { getMonthFromDate } from "@/utils";
+import { BankHoliday } from "@/utils/interface/bankHolidays";
+import { differenceInDays, isWeekend } from "date-fns";
 
-export const NextBankHoliday = () => {
-  const currentYear = new Date().getFullYear().toString();
-  let bankHolidayIndex = 0;
-  let nextBankHoliday = bankHolidays[currentYear][bankHolidayIndex];
-
-  while (isPast(nextBankHoliday.date)) {
-    bankHolidayIndex++;
-
-    // After YYYY-12-25, get the first element of next year
-    if (bankHolidayIndex === bankHolidays[currentYear].length) {
-      nextBankHoliday = bankHolidays[currentYear + 1][0];
-      break;
-    }
-
-    nextBankHoliday = bankHolidays[currentYear][bankHolidayIndex];
-  }
-
-  const happensDuringAWeekend = isWeekend(new Date(nextBankHoliday.date));
+export const NextBankHoliday = ({
+  nextBankHoliday,
+}: {
+  nextBankHoliday: BankHoliday;
+}) => {
+  const happensDuringAWeekend = isWeekend(nextBankHoliday.date);
 
   return (
-    <div className="w-full border-l border-r border-green-700 rounded-2xl bg-cover bg-center">
-      <div className="rounded-t-2xl bg-gradient-to-r from-green-800 to-green-700 p-4">
+    <div className="w-full border-l-2 border-r-2 border-green-700 rounded-2xl bg-cover bg-center">
+      <div className="border-t-2 border-green-700 rounded-t-2xl bg-gradient-to-r from-green-800 to-green-700 p-4"> {/* bg-gradient-to-r from-green-800 to-green-700 */}
         <p className="uppercase text-xl font-medium text-green-50 text-center">{`Dans ${differenceInDays(
           nextBankHoliday.date,
           new Date()
@@ -48,12 +37,7 @@ export const NextBankHoliday = () => {
       </div>
 
       <div
-        className={classNames(
-          happensDuringAWeekend
-            ? "from-red-800 to-red-700 text-red-50"
-            : "from-green-800 to-green-700 text-green-50",
-          "mt-16 rounded-b-2xl bg-gradient-to-r py-2"
-        )}
+        className="from-green-800 to-green-700 text-green-50 mt-16 rounded-b-2xl bg-gradient-to-r py-2"
       >
         <p className="p-4 uppercase text-md font-medium text-center">{`${
           happensDuringAWeekend ? "Pendant" : "En dehors d'"
