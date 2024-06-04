@@ -1,14 +1,12 @@
 import { getMonthFromDate } from "@/utils";
 import { BankHoliday } from "@/utils/interface/bankHolidays";
-import { differenceInDays, isWeekend } from "date-fns";
+import { differenceInDays, isFriday, isMonday, isWeekend } from "date-fns";
 
 export const NextBankHoliday = ({
   nextBankHoliday,
 }: {
   nextBankHoliday: BankHoliday;
 }) => {
-  const happensDuringAWeekend = isWeekend(nextBankHoliday.date);
-
   return (
     <div className="w-full border-l-2 border-r-2 border-l-blue-900 border-r-blue-700 rounded-2xl bg-cover bg-center shadow-xl">
       <div className="border-t-2 border-blue-700 rounded-t-2xl bg-gradient-to-r from-blue-900 to-blue-700 p-4">
@@ -34,10 +32,22 @@ export const NextBankHoliday = ({
       </div>
 
       <div className="from-blue-900 to-blue-700 text-blue-50 mt-16 rounded-b-2xl bg-gradient-to-r py-2">
-        <p className="p-4 uppercase text-xl font-medium text-center">{`${
-          happensDuringAWeekend ? "Pendant" : "En dehors d'"
-        } un week-end`}</p>
+        <p className="p-4 uppercase text-xl font-medium text-center">
+          {generateWeekendMessage(nextBankHoliday.date)}
+        </p>
       </div>
     </div>
   );
+};
+
+const generateWeekendMessage = (date: string) => {
+  let message = "En dehors d'un week-end 🌴";
+  
+  if (isWeekend(date)) {
+    message = "Pendant un week-end 😭";
+  } else if (isFriday(date) || isMonday(date)) {
+    message = "Week-end de 3 jours 🎉";
+  }
+
+  return message;
 };
