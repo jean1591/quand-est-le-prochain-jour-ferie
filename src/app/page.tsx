@@ -20,7 +20,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div className="mt-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
         <div>
           <NextBankHoliday nextBankHoliday={nextBankHoliday} />
@@ -28,29 +28,26 @@ export default function Home() {
 
         {/* DETAILS */}
         <div>
-          <h2 className="text-3xl font-medium">Jours fériés Français 2024</h2>
-          <div className="mt-8">
-            {bankHolidays["2024"].map(({ date, description }) => (
-              <div
-                key={date.toString()}
-                className={classNames(
-                  isPast(date)
-                    ? "text-slate-500"
-                    : "text-blue-800 hover:text-blue-950",
-                  isSameDay(nextBankHoliday.date, date) ? "bg-blue-50/75" : "",
-                  "flex items-center justify-between border-b border-blue-950 py-4"
-                )}
-              >
-                <div>
-                  <p className="text-lg font-medium">
-                    {formatDateToHumanDate(new Date(date))}
-                  </p>
-                  <DaysDifference date={date} />
-                </div>
-                <p className="text-lg font-light">{description}</p>
+          {bankHolidays["2024"].map(({ date, description }) => (
+            <div
+              key={date.toString()}
+              className={classNames(
+                isPast(date)
+                  ? "text-slate-500"
+                  : "text-blue-800 hover:text-blue-950",
+                isSameDay(nextBankHoliday.date, date) ? "bg-blue-50/75" : "",
+                "flex items-center justify-between border-b border-blue-950 py-4"
+              )}
+            >
+              <div>
+                <p className="text-lg font-medium">
+                  {formatDateToHumanDate(new Date(date))}
+                </p>
+                <DaysDifference date={date} />
               </div>
-            ))}
-          </div>
+              <p className="text-lg font-light">{description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
