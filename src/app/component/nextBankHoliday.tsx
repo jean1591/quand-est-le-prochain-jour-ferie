@@ -1,6 +1,7 @@
-import { getMonthFromDate } from "@/utils";
-import { BankHoliday } from "@/utils/interface/bankHolidays";
 import { differenceInDays, isFriday, isMonday, isWeekend } from "date-fns";
+
+import { BankHoliday } from "@/utils/interface/bankHolidays";
+import { getMonthFromDate } from "@/utils";
 
 export const NextBankHoliday = ({
   nextBankHoliday,
@@ -8,33 +9,26 @@ export const NextBankHoliday = ({
   nextBankHoliday: BankHoliday;
 }) => {
   return (
-    <div>
-      <div className="w-full border-l-2 border-r-2 border-l-blue-900 border-r-blue-700 rounded-2xl bg-cover bg-center shadow-xl">
-        <div className="border-t-2 border-blue-700 rounded-t-2xl bg-gradient-to-r from-blue-900 to-blue-700 p-4">
-          <p className="uppercase text-xl font-medium text-blue-50 text-center">{`Dans ${differenceInDays(
-            nextBankHoliday.date,
-            new Date()
-          )} jours`}</p>
-        </div>
-
-        <div className="px-4 mt-16 flex items-end justify-start">
-          <p className="text-8xl font-medium border-b-4 border-blue-900">
+    <div className="w-full bg-gradient-to-r from-blue-900 to-blue-700 text-blue-50 py-16">
+      <div className="px-4 mx-auto max-w-5xl">
+        <div className="flex items-end justify-start">
+          <p className="text-8xl font-medium">
             {new Date(nextBankHoliday.date).getDate()}
           </p>
-          <p className="text-5xl font-medium border-b-4 border-blue-900">
+          <p className="text-5xl font-medium">
             {getMonthFromDate(new Date(nextBankHoliday.date))}
           </p>
         </div>
 
-        <div className="px-4 mt-4">
-          <p className="text-2xl font-medium uppercase">
+        <div className="mt-4">
+          <p className="text-3xl font-normal uppercase">
             {nextBankHoliday.description}
           </p>
         </div>
 
-        <div className="from-blue-900 to-blue-700 text-blue-50 mt-16 rounded-b-2xl bg-gradient-to-r py-2">
-          <p className="p-4 uppercase text-xl font-medium text-center">
-            {generateWeekendMessage(nextBankHoliday.date)}
+        <div className="mt-16">
+          <p className="text-2xl font-normal">
+            {generateBaseline(nextBankHoliday.date)}
           </p>
         </div>
       </div>
@@ -42,14 +36,14 @@ export const NextBankHoliday = ({
   );
 };
 
-const generateWeekendMessage = (date: string) => {
-  let message = "En dehors d'un week-end 🌴";
-  
+const generateBaseline = (date: string) => {
+  let message = "en dehors d'un week-end 🌴";
+
   if (isWeekend(date)) {
-    message = "Pendant un week-end 😭";
+    message = "pendant un week-end 😭";
   } else if (isFriday(date) || isMonday(date)) {
-    message = "Week-end de 3 jours 🎉";
+    message = "week-end de 3 jours 🎉";
   }
 
-  return message;
+  return `Dans ${differenceInDays(date, new Date())} jours, ${message}`;
 };

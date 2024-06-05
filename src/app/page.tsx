@@ -1,6 +1,7 @@
 import { bankHolidays, classNames, formatDateToHumanDate } from "@/utils";
-import { NextBankHoliday } from "./component/nextBankHoliday";
 import { differenceInDays, isPast, isSameDay } from "date-fns";
+
+import { NextBankHoliday } from "./component/nextBankHoliday";
 
 export default function Home() {
   const currentYear = new Date().getFullYear().toString();
@@ -20,17 +21,15 @@ export default function Home() {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+    <div>
       <NextBankHoliday nextBankHoliday={nextBankHoliday} />
 
-      <div>
+      <div className="px-4 mx-auto max-w-5xl mt-12">
         {bankHolidays[currentYear].map(({ date, description }) => (
           <div
             key={date.toString()}
             className={classNames(
-              isPast(date)
-                ? "text-slate-400"
-                : "text-blue-800",
+              isPast(date) ? "text-slate-400" : "text-blue-800",
               isSameDay(nextBankHoliday.date, date) ? "bg-blue-50/75" : "",
               "flex items-center justify-between border-b border-blue-950 py-4"
             )}

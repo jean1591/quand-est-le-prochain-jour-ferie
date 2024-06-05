@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="mt-16">
-      <h1 className="text-xl sm:text-4xl font-normal ">À propos</h1>
+    <div className="px-4 mx-auto max-w-5xl">
+      <h1 className="text-xl sm:text-4xl font-normal">À propos</h1>
 
       <p className="mt-4 text-xl">
         Retrouvez tous les jours fériés Français sur un seul et même site.
@@ -30,7 +30,9 @@ export default function About() {
         .
       </p>
 
-      <p className="mt-12 text-3xl">Derrière le clavier 👨🏽‍💻</p>
+      <div className="flex">
+        <p className="mt-12 text-3xl">Derrière le clavier 👨🏽‍💻</p>
+      </div>
       <p className="mt-4 text-xl">
         Je m'appelle{" "}
         <Link
@@ -40,8 +42,8 @@ export default function About() {
         >
           Jean Robertou
         </Link>
-        , je fais de l'ordinateur (en tant que lead développeur web) et crée des apps web
-        pour m'amuser.
+        , je fais de l'ordinateur (en tant que lead développeur web) et crée des
+        apps web pour m'amuser.
       </p>
 
       <p className="text-xl">
@@ -52,7 +54,8 @@ export default function About() {
           href="https://github.com/jean1591/quand-est-le-prochain-jour-ferie/"
         >
           ici
-        </Link>.
+        </Link>
+        .
       </p>
     </div>
   );

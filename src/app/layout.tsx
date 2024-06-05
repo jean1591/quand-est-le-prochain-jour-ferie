@@ -1,9 +1,9 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
-import { classNames } from "@/utils";
-import { NavBar } from "./component/navBar";
 import { Footer } from "./component/footer";
+import { Inter } from "next/font/google";
+import { NavBar } from "./component/navBar";
+import { classNames } from "@/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
         )}
       >
         <NavBar />
-        <div className="my-16 px-4 sm:px-0 mx-auto max-w-5xl">{children}</div>
+        <div className="mb-16">{children}</div>
         <Footer />
       </body>
     </html>

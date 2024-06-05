@@ -9,7 +9,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <div className="sticky top-[100vh] h-24 w-full bg-blue-900/50">
-      <div className="h-full flex items-center justify-between px-4 sm:px-0 mx-auto max-w-5xl text-indigo-50 text-lg font-normal">
+      <div className="h-full flex items-center justify-between px-4 sm:px-0 mx-auto max-w-5xl text-blue-50 text-lg font-normal">
         <p className="text-left text-base sm:text-lg">
           Fait avec ❤️ par Jean Robertou
         </p>
