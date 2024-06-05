@@ -52,5 +52,45 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: "2025-01-01",
       description: "Jour de l'an",
     },
+    {
+      date: "2025-04-10",
+      description: "Lundi de Pâques",
+    },
+    {
+      date: "2025-05-01",
+      description: "Fête du travail",
+    },
+    {
+      date: "2025-05-08",
+      description: "Victoire 1945",
+    },
+    {
+      date: "2025-05-18",
+      description: "Ascension",
+    },
+    {
+      date: "2025-05-29",
+      description: "Pentecôte",
+    },
+    {
+      date: "2025-07-14",
+      description: "Fête nationale",
+    },
+    {
+      date: "2025-08-15",
+      description: "Assomption",
+    },
+    {
+      date: "2025-11-01",
+      description: "Toussaint",
+    },
+    {
+      date: "2025-11-11",
+      description: "Armistice 1918",
+    },
+    {
+      date: "2025-12-25",
+      description: "Jour de Noël",
+    },
   ],
 };
