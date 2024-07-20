@@ -11,7 +11,7 @@ export const NextBankHoliday = ({
   return (
     <div className="w-full bg-gradient-to-r from-blue-900 to-blue-700 text-blue-50 py-16">
       <div className="px-4 mx-auto max-w-5xl">
-        <div className="flex items-end justify-start">
+        <div className="flex items-baseline justify-start">
           <p className="text-8xl font-medium">
             {new Date(nextBankHoliday.date).getDate()}
           </p>
@@ -22,7 +22,7 @@ export const NextBankHoliday = ({
 
         <div className="mt-4">
           <p className="text-3xl font-normal uppercase">
-            {nextBankHoliday.description}
+            {nextBankHoliday.description} {nextBankHoliday.emoji}
           </p>
         </div>
 
