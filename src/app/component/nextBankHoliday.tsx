@@ -12,12 +12,12 @@ export const NextBankHoliday = ({
     <div className="w-full bg-gradient-to-r from-blue-900 to-blue-700 text-blue-50 py-16">
       <div className="px-4 mx-auto max-w-5xl">
         <div className="flex items-baseline justify-start">
-          <p className="text-8xl font-medium">
+          <h1 className="text-8xl font-medium">
             {new Date(nextBankHoliday.date).getDate()}
-          </p>
-          <p className="text-5xl font-medium">
+          </h1>
+          <h2 className="text-5xl font-medium">
             {getMonthFromDate(new Date(nextBankHoliday.date))}
-          </p>
+          </h2>
         </div>
 
         <div className="mt-4">
