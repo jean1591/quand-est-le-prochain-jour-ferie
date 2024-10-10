@@ -9,7 +9,8 @@ import { classNames } from "@/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const metaDescription = "Trouvez la liste des prochains jours fériés Français";
+const metaDescription =
+  "Retrouver la liste des prochains jours fériés Français ainsi que le nombre de jours jusqu'à ces derniers. Restez informé si le prochain jour ferié offre un week-end de 3 jours ou un pont.";
 
 export const metadata: Metadata = {
   title: {
