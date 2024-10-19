@@ -22,7 +22,14 @@ export const BankHolidaysList = ({
           )}
         >
           <div>
-            <p className="text-lg font-medium">
+            <p
+              className={classNames(
+                isSameDay(nextBankHoliday.date, date)
+                  ? "font-bold"
+                  : "font-medium",
+                "text-lg"
+              )}
+            >
               {formatDateToHumanDate(new Date(date))}
             </p>
             <DaysDifference date={date} />
