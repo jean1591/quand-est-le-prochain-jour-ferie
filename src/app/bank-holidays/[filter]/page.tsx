@@ -2,6 +2,7 @@ import { bankHolidays, months } from '@/utils'
 
 import { BankHolidaysList } from '../components/bankHolidaysList'
 import { Header } from '../components/Header'
+import { redirect } from 'next/navigation'
 
 interface Props {
   params: { filter: string }
@@ -9,11 +10,17 @@ interface Props {
 
 export default function BankHolidaysYearPage({ params }: Props) {
   let filter = ''
-  let bankHolidaysSelectedPeriod = bankHolidays['2024']
+  const year = new Date().getFullYear()
+  let bankHolidaysSelectedPeriod = bankHolidays[year]
 
   if (Object.keys(bankHolidays).includes(params.filter)) {
     filter = params.filter
     bankHolidaysSelectedPeriod = bankHolidays[filter]
+
+    // Redirect is filter year is current year
+    if (filter === year.toString()) {
+      redirect('/')
+    }
   }
 
   if (params.filter.includes('-')) {
@@ -36,7 +43,6 @@ export default function BankHolidaysYearPage({ params }: Props) {
       .indexOf(params.filter.toLowerCase()) > -1
   ) {
     const month = params.filter.split('-')[0]
-    const year = new Date().getFullYear()
 
     filter = `${month} ${year}`
 
