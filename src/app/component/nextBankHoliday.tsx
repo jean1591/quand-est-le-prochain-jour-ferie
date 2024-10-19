@@ -2,7 +2,6 @@ import { differenceInDays, isFriday, isMonday, isWeekend } from "date-fns";
 
 import { BankHoliday } from "@/utils/interface/bankHolidays";
 import { getMonthFromDate } from "@/utils";
-import { padStart } from "lodash";
 
 export const NextBankHoliday = ({
   nextBankHoliday,

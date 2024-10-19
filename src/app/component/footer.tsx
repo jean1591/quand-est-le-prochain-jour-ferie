@@ -2,42 +2,54 @@ import {
   PiGithubLogo,
   PiIdentificationBadge,
   PiLinkedinLogo,
-} from "react-icons/pi";
+} from 'react-icons/pi'
 
-import Link from "next/link";
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
-    <div className="sticky top-[100vh] h-24 w-full bg-blue-900/50">
-      <div className="h-full flex items-center justify-between px-4 mx-auto max-w-5xl text-blue-50 text-lg font-normal">
-        <p className="text-left text-base sm:text-lg">
-          Fait avec ❤️ par Jean Robertou
-        </p>
+    <div className="sticky w-full bg-blue-900/50 text-lg text-blue-50 sm:text-lg">
+      <div className="mx-auto max-w-5xl px-4 py-8">
+        <div className="block items-center justify-between font-normal sm:flex">
+          <p className="text-center font-bold sm:text-left">
+            Fait avec ❤️ par Jean Robertou
+          </p>
 
-        <div className="flex items-center justify-center sm:justify-end gap-x-2">
-          <Link
-            href="https://jeanrobertou.com"
-            target="_blank"
-            className="flex items-center justify-center"
-          >
-            <PiIdentificationBadge className="h-8 w-8" />
-          </Link>
-          <Link
-            href="https://github.com/jean1591"
-            target="_blank"
-            className="flex items-center justify-center"
-          >
-            <PiGithubLogo className="h-8 w-8" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/robertoujean/"
-            target="_blank"
-            className="flex items-center justify-center"
-          >
-            <PiLinkedinLogo className="h-8 w-8" />
-          </Link>
+          <div className="mt-4 flex items-center justify-center gap-x-2 sm:mt-0 sm:justify-end">
+            <Link
+              href="https://jeanrobertou.com"
+              target="_blank"
+              className="flex items-center justify-center"
+            >
+              <PiIdentificationBadge className="h-8 w-8" />
+            </Link>
+            <Link
+              href="https://github.com/jean1591"
+              target="_blank"
+              className="flex items-center justify-center"
+            >
+              <PiGithubLogo className="h-8 w-8" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/robertoujean/"
+              target="_blank"
+              className="flex items-center justify-center"
+            >
+              <PiLinkedinLogo className="h-8 w-8" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-4">
+          <p className="text-center font-bold">Explorez les jours fériés en</p>
+          <div className="flex items-center justify-center space-x-8">
+            <Link href="/jours-feries-2024">2024</Link>
+            <Link href="/jours-feries-2025">2025</Link>
+            <Link href="/jours-feries-2026">2026</Link>
+            <Link href="/jours-feries-2027">2027</Link>
+          </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
