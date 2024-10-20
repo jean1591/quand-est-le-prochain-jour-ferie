@@ -2,10 +2,25 @@ import { bankHolidays, months } from '@/utils'
 
 import { BankHolidaysList } from '../components/bankHolidaysList'
 import { Header } from '../components/Header'
+import { Metadata } from 'next'
+import { metadata } from '@/app/layout'
 import { redirect } from 'next/navigation'
 
 interface Props {
   params: { filter: string }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const canonicalUrl = `https://quand-est-le-prochain-jour-ferie.jeanrobertou.com/jours-feries-${params.filter}`
+
+  return {
+    ...metadata,
+    title: `Jours fériés en ${params.filter}`,
+    description: `Retrouver la liste des prochains jours fériés Français en ${params.filter} ainsi que le nombre de jours jusqu'à ces derniers. Restez informé si le prochain jour ferié offre un week-end de 3 jours ou un pont.`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+  }
 }
 
 export default function BankHolidaysYearPage({ params }: Props) {

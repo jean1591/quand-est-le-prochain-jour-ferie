@@ -35,9 +35,10 @@ export const metadata: Metadata = {
     ],
     type: 'website',
   },
+  alternates: {
+    canonical: 'https://quand-est-le-prochain-jour-ferie.jeanrobertou.com/',
+  },
 }
-
-// TODO: add canonical URL
 
 export default function RootLayout({
   children,
