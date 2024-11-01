@@ -1,22 +1,27 @@
-import { differenceInDays, isFriday, isMonday, isWeekend } from "date-fns";
+import {
+  differenceInCalendarDays,
+  isFriday,
+  isMonday,
+  isWeekend,
+} from 'date-fns'
 
-import { BankHoliday } from "@/utils/interface/bankHolidays";
-import { getMonthFromDate } from "@/utils";
+import { BankHoliday } from '@/utils/interface/bankHolidays'
+import { getMonthFromDate } from '@/utils'
 
 export const NextBankHoliday = ({
   nextBankHoliday,
 }: {
-  nextBankHoliday: BankHoliday;
+  nextBankHoliday: BankHoliday
 }) => {
   return (
-    <div className="w-full bg-gradient-to-r from-blue-900 to-blue-700 text-blue-50 py-16">
-      <div className="px-4 mx-auto max-w-5xl">
-        <div className="flex items-baseline justify-start font-extrabold space-x-4">
+    <div className="w-full bg-gradient-to-r from-blue-900 to-blue-700 py-16 text-blue-50">
+      <div className="mx-auto max-w-5xl px-4">
+        <div className="flex items-baseline justify-start space-x-4 font-extrabold">
           <h1 className="text-8xl">
             {new Date(nextBankHoliday.date)
               .getDate()
               .toString()
-              .padStart(2, "0")}
+              .padStart(2, '0')}
           </h1>
           <h2 className="text-5xl">
             {getMonthFromDate(new Date(nextBankHoliday.date))}
@@ -30,23 +35,23 @@ export const NextBankHoliday = ({
         </div>
 
         <div className="mt-16">
-          <p className="text-2xl text-balance">
+          <p className="text-balance text-2xl">
             {generateBaseline(nextBankHoliday.date)}
           </p>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 const generateBaseline = (date: string) => {
-  let message = "en dehors d'un week-end 🌴";
+  let message = "en dehors d'un week-end 🌴"
 
   if (isWeekend(date)) {
-    message = "pendant un week-end 😭";
+    message = 'pendant un week-end 😭'
   } else if (isFriday(date) || isMonday(date)) {
-    message = "week-end de 3 jours 🎉";
+    message = 'week-end de 3 jours 🎉'
   }
 
-  return `Dans ${differenceInDays(date, new Date())} jours, ${message}`;
-};
+  return `Dans ${differenceInCalendarDays(date, new Date())} jours, ${message}`
+}

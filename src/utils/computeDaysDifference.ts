@@ -1,16 +1,16 @@
-import { differenceInDays } from "date-fns";
+import { differenceInCalendarDays } from 'date-fns'
 
 export const computeDaysDifference = (date: string) => {
-  const daysDifference = differenceInDays(date, new Date());
-  let message = "";
+  const daysDifference = differenceInCalendarDays(date, new Date())
+  let message = ''
 
   if (daysDifference < 0) {
-    message = `Il y a ${Math.abs(daysDifference)} jours`;
+    message = `Il y a ${Math.abs(daysDifference)} jours`
   } else if (daysDifference === 0) {
-    message = "C'est aujourd'hui !";
+    message = "C'est aujourd'hui !"
   } else {
-    message = `Dans ${daysDifference} jours`;
+    message = `Dans ${daysDifference} jours`
   }
 
-  return message;
-};
+  return message
+}
