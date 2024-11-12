@@ -18,13 +18,11 @@ export const metadata: Metadata = {
     default: 'Quand est le prochain jour férié ?',
   },
   description: metaDescription,
-  metadataBase: new URL(
-    'https://quand-est-le-prochain-jour-ferie.jeanrobertou.com/'
-  ),
+  metadataBase: new URL('https://quand-est-le-prochain-jour-ferie.fr/'),
   openGraph: {
     title: 'Quand est le prochain jour férié ?',
     description: metaDescription,
-    url: 'https://quand-est-le-prochain-jour-ferie.jeanrobertou.com/',
+    url: 'https://quand-est-le-prochain-jour-ferie.fr/',
     siteName: 'Quand est le prochain jour férié ?',
     images: [
       {
@@ -36,7 +34,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://quand-est-le-prochain-jour-ferie.jeanrobertou.com/',
+    canonical: 'https://quand-est-le-prochain-jour-ferie.fr/',
   },
 }
 

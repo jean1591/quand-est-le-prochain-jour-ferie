@@ -11,7 +11,7 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const canonicalUrl = `https://quand-est-le-prochain-jour-ferie.jeanrobertou.com/jours-feries-${params.filter}`
+  const canonicalUrl = `https://quand-est-le-prochain-jour-ferie.fr/jours-feries-${params.filter}`
 
   return {
     ...metadata,

@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const baseUrl = 'https://quand-est-le-prochain-jour-ferie.jeanrobertou.com'
+const baseUrl = 'https://quand-est-le-prochain-jour-ferie.fr'
 const changeFrequency = 'monthly'
 
 export default function sitemap(): MetadataRoute.Sitemap {

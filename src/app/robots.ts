@@ -1,12 +1,11 @@
-import { MetadataRoute } from "next";
+import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: "*",
-      allow: "/",
+      userAgent: '*',
+      allow: '/',
     },
-    sitemap:
-      "https://quand-est-le-prochain-jour-ferie.jeanrobertou.com/sitemap.xml",
-  };
+    sitemap: 'https://quand-est-le-prochain-jour-ferie.fr/sitemap.xml',
+  }
 }
