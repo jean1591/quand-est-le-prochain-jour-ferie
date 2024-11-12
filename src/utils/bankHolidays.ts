@@ -28,7 +28,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       emoji: '☁️',
     },
     {
-      date: '2024-05-20',
+      date: '2024-05-19',
       description: 'Pentecôte',
       emoji: '😇',
     },
@@ -65,7 +65,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       emoji: '🔄',
     },
     {
-      date: '2025-04-10',
+      date: '2025-04-21',
       description: 'Lundi de Pâques',
       emoji: '🐰',
     },
@@ -80,12 +80,12 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       emoji: '🪖',
     },
     {
-      date: '2025-05-18',
+      date: '2025-05-29',
       description: 'Ascension',
       emoji: '☁️',
     },
     {
-      date: '2025-05-29',
+      date: '2025-06-08',
       description: 'Pentecôte',
       emoji: '😇',
     },
@@ -142,7 +142,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       emoji: '☁️',
     },
     {
-      date: '2026-05-25',
+      date: '2026-05-24',
       description: 'Pentecôte',
       emoji: '😇',
     },
@@ -199,7 +199,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       emoji: '☁️',
     },
     {
-      date: '2027-05-17',
+      date: '2027-05-16',
       description: 'Pentecôte',
       emoji: '😇',
     },
