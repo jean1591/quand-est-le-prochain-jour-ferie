@@ -42,9 +42,8 @@ export const Footer = () => {
         </div>
 
         <div className="mt-4">
-          <p className="text-center font-bold">Explorez les jours fériés en</p>
+          <p className="text-center font-bold">Jours fériés en</p>
           <div className="flex items-center justify-center space-x-8">
-            <Link href="/jours-feries-2024">2024</Link>
             <Link href="/jours-feries-2025">2025</Link>
             <Link href="/jours-feries-2026">2026</Link>
             <Link href="/jours-feries-2027">2027</Link>
