@@ -13,10 +13,7 @@ const metaDescription =
   "Retrouver la liste des prochains jours fériés Français ainsi que le nombre de jours jusqu'à ces derniers. Restez informé si le prochain jour ferié offre un week-end de 3 jours ou un pont."
 
 export const metadata: Metadata = {
-  title: {
-    template: 'Quand est le prochain jour férié ?',
-    default: 'Quand est le prochain jour férié ?',
-  },
+  title: 'Quand est le prochain jour férié ?',
   description: metaDescription,
   metadataBase: new URL('https://quand-est-le-prochain-jour-ferie.fr/'),
   openGraph: {

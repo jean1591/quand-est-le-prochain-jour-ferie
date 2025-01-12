@@ -36,7 +36,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: '2024-05-19',
       description: 'Pentecôte',
       emoji: '😇',
-      link: 'blog/pourquoi-la-pentecôte-est-ferie',
+      link: 'blog/pourquoi-la-pentecote-est-ferie',
     },
     {
       date: '2024-07-14',
@@ -104,7 +104,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: '2025-06-08',
       description: 'Pentecôte',
       emoji: '😇',
-      link: 'blog/pourquoi-la-pentecôte-est-ferie',
+      link: 'blog/pourquoi-la-pentecote-est-ferie',
     },
     {
       date: '2025-07-14',
@@ -172,7 +172,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: '2026-05-24',
       description: 'Pentecôte',
       emoji: '😇',
-      link: 'blog/pourquoi-la-pentecôte-est-ferie',
+      link: 'blog/pourquoi-la-pentecote-est-ferie',
     },
     {
       date: '2026-07-14',
@@ -240,7 +240,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: '2027-05-16',
       description: 'Pentecôte',
       emoji: '😇',
-      link: 'blog/pourquoi-la-pentecôte-est-ferie',
+      link: 'blog/pourquoi-la-pentecote-est-ferie',
     },
     {
       date: '2027-07-14',
