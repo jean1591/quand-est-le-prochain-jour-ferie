@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const HuitMai = () => {
   return (
     <div className="space-y-4">
@@ -118,6 +120,8 @@ export const HuitMai = () => {
           est rendu aux victimes de la guerre avec une minute de silence.
         </li>
       </ul>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Le 8 mai dans le monde

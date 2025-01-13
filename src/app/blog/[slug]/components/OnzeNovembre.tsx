@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const OnzeNovembre = () => {
   return (
     <div className="space-y-4">
@@ -127,6 +129,8 @@ export const OnzeNovembre = () => {
           port du coquelicot et des cérémonies similaires.
         </li>
       </ul>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi le 11 novembre reste important aujourd’hui ?

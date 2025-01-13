@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const PremierNovembre = () => {
   return (
     <div className="space-y-4">
@@ -95,6 +97,8 @@ export const PremierNovembre = () => {
         laïcs, cette date est souvent marquée de manière plus discrète ou n'est
         pas observée du tout.
       </p>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi le 1er novembre reste important aujourd’hui

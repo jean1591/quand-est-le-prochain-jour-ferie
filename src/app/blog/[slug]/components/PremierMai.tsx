@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const PremierMai = () => {
   return (
     <div className="space-y-4">
@@ -109,6 +111,8 @@ export const PremierMai = () => {
           un moment fort de mobilisation pour les droits sociaux.
         </li>
       </ul>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Anecdotes et faits intéressants sur le 1er mai

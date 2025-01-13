@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const Paques = () => {
   return (
     <div className="space-y-4">
@@ -35,6 +37,8 @@ export const Paques = () => {
           simplement de se reposer après les célébrations du dimanche.
         </li>
       </ul>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Le Lundi de Pâques à l'international

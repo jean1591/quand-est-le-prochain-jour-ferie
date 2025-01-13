@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const PremierJanvier = () => {
   return (
     <div className="space-y-4">
@@ -95,6 +97,8 @@ export const PremierJanvier = () => {
         Aujourd’hui, bien que les étrennes aient évolué, elles restent une
         manière de renforcer les liens familiaux et amicaux en début d’année.
       </p>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Un jour férié universel : le 1er janvier dans le monde

@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const Pentecote = () => {
   return (
     <div className="space-y-4">
@@ -35,6 +37,8 @@ export const Pentecote = () => {
         célébrée dans de nombreuses églises et rassemble les fidèles pour des
         offices et des prières.
       </p>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi la Pentecôte est-elle fériée en France ?

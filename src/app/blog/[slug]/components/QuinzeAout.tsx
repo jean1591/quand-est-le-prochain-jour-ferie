@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const QuinzeAout = () => {
   return (
     <div className="space-y-4">
@@ -110,6 +112,8 @@ export const QuinzeAout = () => {
           attirent des visiteurs dans toute la France.
         </li>
       </ul>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Le 15 août dans le monde

@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const QuatorzeJuillet = () => {
   return (
     <div className="space-y-4">
@@ -152,6 +154,8 @@ export const QuatorzeJuillet = () => {
           l’Hexagone.
         </li>
       </ul>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Anecdotes et faits méconnus sur le 14 juillet

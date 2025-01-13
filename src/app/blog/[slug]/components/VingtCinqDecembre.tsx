@@ -1,3 +1,5 @@
+import { CTA } from './CTA'
+
 export const VingtCinqDecembre = () => {
   return (
     <div className="space-y-4">
@@ -157,6 +159,8 @@ export const VingtCinqDecembre = () => {
           aspect festif et convivial.
         </li>
       </ul>
+
+      <CTA />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi le 25 décembre reste essentiel aujourd’hui
