@@ -10,7 +10,7 @@ export const QuinzeAout = () => {
 
       <TLDR text="Le 15 août est férié pour célébrer l'Assomption de la Vierge Marie, un événement important dans la foi chrétienne. Ce jour marque la montée au ciel de la Vierge Marie, un symbole d'espoir pour les croyants." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines religieuses du 15 août
       </h2>
 
@@ -44,7 +44,7 @@ export const QuinzeAout = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi le 15 août est-il un jour férié en France ?
       </h2>
 
@@ -67,7 +67,7 @@ export const QuinzeAout = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 15 août en France aujourd’hui : entre tradition et loisirs
       </h2>
 
@@ -109,7 +109,7 @@ export const QuinzeAout = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 15 août dans le monde
       </h2>
 
@@ -143,7 +143,7 @@ export const QuinzeAout = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une fête entre tradition et modernité
       </h2>
 

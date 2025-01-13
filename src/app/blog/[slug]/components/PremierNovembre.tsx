@@ -10,7 +10,7 @@ export const PremierNovembre = () => {
 
       <TLDR text="Le 1er novembre est la Toussaint, une fête catholique honorant tous les saints et martyrs. Ce jour est l'occasion de se souvenir des défunts et de célébrer la sainteté de ceux qui ont mené une vie exemplaire." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Origines historiques et religieuses du 1er novembre
       </h2>
 
@@ -27,7 +27,7 @@ export const PremierNovembre = () => {
         chapelle en l'honneur de tous les saints à Rome.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les traditions du 1er novembre en France
       </h2>
 
@@ -63,7 +63,7 @@ export const PremierNovembre = () => {
         symbole incontournable de la Toussaint.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 1er novembre dans d’autres cultures
       </h2>
 
@@ -96,7 +96,7 @@ export const PremierNovembre = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi le 1er novembre reste important aujourd’hui
       </h2>
 
@@ -113,7 +113,7 @@ export const PremierNovembre = () => {
         notre existence collective.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une fête entre tradition et modernité
       </h2>
       <p>

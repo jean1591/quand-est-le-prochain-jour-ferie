@@ -10,7 +10,7 @@ export const Pentecote = () => {
 
       <TLDR text="La Pentecôte est un jour férié chrétien qui commémore la descente du Saint-Esprit sur les apôtres, marquant ainsi le début de l'Église chrétienne. Cette fête, célébrée 50 jours après Pâques, est symbolique de la diffusion du message chrétien." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines religieuses de la Pentecôte
       </h2>
 
@@ -35,7 +35,7 @@ export const Pentecote = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi la Pentecôte est-elle fériée en France ?
       </h2>
 
@@ -70,7 +70,7 @@ export const Pentecote = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une fête entre tradition et modernité
       </h2>
 

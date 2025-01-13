@@ -10,7 +10,7 @@ export const PremierMai = () => {
 
       <TLDR text="Le 1er mai est célébré comme la Fête du Travail, une journée de revendications sociales et de célébration des droits des travailleurs. Initialement liée à la lutte ouvrière au XIXe siècle, elle a été instituée comme jour férié en France pour honorer les progrès sociaux et économiques." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques
       </h2>
 
@@ -55,7 +55,7 @@ export const PremierMai = () => {
         comme une "Fête du Travail" officielle.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 1er mai en France : traditions et significations
       </h2>
 
@@ -108,7 +108,7 @@ export const PremierMai = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Anecdotes et faits intéressants sur le 1er mai
       </h2>
 
@@ -131,7 +131,7 @@ export const PremierMai = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une journée pour se souvenir et célébrer
       </h2>
       <p>

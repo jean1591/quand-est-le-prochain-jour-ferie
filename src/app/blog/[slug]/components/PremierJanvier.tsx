@@ -10,7 +10,7 @@ export const PremierJanvier = () => {
 
       <TLDR text="Le 1er janvier est férié pour célébrer le Nouvel An. Cette tradition a des racines dans le calendrier romain et chrétien, marquant le début de l'année civile. Bien que célébrée de manière mondiale, sa signification varie selon les cultures et les religions." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le début de l’année, un jour à part
       </h2>
 
@@ -23,7 +23,7 @@ export const PremierJanvier = () => {
         les racines de cette tradition universelle.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques: le calendrier romain
       </h2>
 
@@ -55,7 +55,7 @@ export const PremierJanvier = () => {
         religions ont adopté d’autres calendriers au fil du temps.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 1er janvier en France : traditions et significations
       </h2>
 
@@ -94,7 +94,7 @@ export const PremierJanvier = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Un jour férié universel : le 1er janvier dans le monde
       </h2>
       <p>
@@ -150,7 +150,7 @@ export const PremierJanvier = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Anecdotes et faits intéressants sur le 1er janvier
       </h2>
 
@@ -170,7 +170,7 @@ export const PremierJanvier = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Un jour férié riche de symboles
       </h2>
       <p>

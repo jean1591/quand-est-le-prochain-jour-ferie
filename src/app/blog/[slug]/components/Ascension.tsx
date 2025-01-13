@@ -10,7 +10,7 @@ export const Ascension = () => {
 
       <TLDR text="L'Ascension est un jour férié chrétien célébrant l'élévation de Jésus-Christ au ciel, 40 jours après sa résurrection. Il marque un moment clé dans la tradition chrétienne et est observé comme un signe de l'espoir et de la foi chrétienne." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Origines religieuses de l’Ascension
       </h2>
 
@@ -52,7 +52,7 @@ export const Ascension = () => {
         année en fonction du calendrier lunaire.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi l’Ascension est-elle un jour férié en France ?
       </h2>
 
@@ -67,7 +67,7 @@ export const Ascension = () => {
         permettre aux fidèles de participer aux célébrations liturgiques.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une fête respectée malgré la laïcité
       </h2>
 
@@ -99,7 +99,7 @@ export const Ascension = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Anecdotes et faits méconnus sur l’Ascension
       </h2>
 
@@ -119,7 +119,7 @@ export const Ascension = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une journée entre histoire et modernité
       </h2>
 

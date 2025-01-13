@@ -10,7 +10,7 @@ export const OnzeNovembre = () => {
 
       <TLDR text="Le 11 novembre est férié pour commémorer l'armistice de la Première Guerre mondiale, signé en 1918. Cette journée rend hommage aux soldats tombés pour la France et célèbre la paix retrouvée après des années de conflit." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques du 11 novembre
       </h2>
 
@@ -44,7 +44,7 @@ export const OnzeNovembre = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi cette date est-elle devenue un jour férié ?
       </h2>
 
@@ -78,7 +78,7 @@ export const OnzeNovembre = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les traditions du 11 novembre en France
       </h2>
 
@@ -101,7 +101,7 @@ export const OnzeNovembre = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 11 novembre dans le monde
       </h2>
 
@@ -126,7 +126,7 @@ export const OnzeNovembre = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi le 11 novembre reste important aujourd’hui ?
       </h2>
 
@@ -153,7 +153,7 @@ export const OnzeNovembre = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une date, un symbole, un héritage
       </h2>
       <p>

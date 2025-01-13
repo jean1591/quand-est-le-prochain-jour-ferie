@@ -10,7 +10,7 @@ export const Paques = () => {
 
       <TLDR text="Le Lundi de Pâques est un jour férié en France pour commémorer la résurrection de Jésus-Christ, un événement majeur dans le christianisme. Il clôture les festivités pascales et marque un temps de réflexion et de célébration spirituelle pour les croyants." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Des origines religieuses
       </h2>
       <p>
@@ -33,7 +33,7 @@ export const Paques = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le Lundi de Pâques à l'international
       </h2>
       <p>
@@ -59,7 +59,7 @@ export const Paques = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Un jour férié chargé de sens
       </h2>
 

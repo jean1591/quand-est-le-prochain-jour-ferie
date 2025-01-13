@@ -10,7 +10,7 @@ export const QuatorzeJuillet = () => {
 
       <TLDR text="Le 14 juillet commémore la prise de la Bastille en 1789, un événement majeur de la Révolution française. Ce jour férié symbolise la fin de l'absolutisme et le début des idéaux républicains, incarnant la liberté, l'égalité et la fraternité." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques du 14 juillet
       </h2>
 
@@ -59,7 +59,7 @@ export const QuatorzeJuillet = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi cette date est-elle devenue fête nationale ?
       </h2>
 
@@ -95,7 +95,7 @@ export const QuatorzeJuillet = () => {
         rappelant les luttes pour la démocratie et les droits humains.
       </p>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les célébrations du 14 juillet aujourd’hui
       </h2>
 
@@ -152,7 +152,7 @@ export const QuatorzeJuillet = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Anecdotes et faits méconnus sur le 14 juillet
       </h2>
 
@@ -173,7 +173,7 @@ export const QuatorzeJuillet = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une date, un symbole, un héritage
       </h2>
 

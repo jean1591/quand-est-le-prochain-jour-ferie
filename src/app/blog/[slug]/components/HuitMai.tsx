@@ -10,7 +10,7 @@ export const HuitMai = () => {
 
       <TLDR text="Le 8 mai marque la fin de la Seconde Guerre mondiale en Europe avec la capitulation de l'Allemagne en 1945. Ce jour est férié pour commémorer la victoire sur le nazisme et honorer les soldats et civils qui ont lutté pour la paix." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         La fin de la Seconde Guerre mondiale
       </h2>
 
@@ -41,7 +41,7 @@ export const HuitMai = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 8 mai devient une fête nationale
       </h2>
 
@@ -96,7 +96,7 @@ export const HuitMai = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les commémorations du 8 mai en France
       </h2>
       <p>
@@ -117,7 +117,7 @@ export const HuitMai = () => {
 
       <CTA />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 8 mai dans le monde
       </h2>
 
@@ -160,7 +160,7 @@ export const HuitMai = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une journée de mémoire et de gratitude
       </h2>
 

@@ -10,7 +10,7 @@ export const VingtCinqDecembre = () => {
 
       <TLDR text="Le 25 décembre est férié pour célébrer Noël, la naissance de Jésus-Christ, un événement fondamental pour le christianisme. Cette fête est l'occasion de se rassembler en famille et de célébrer l'esprit de partage, de générosité et de paix." />
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques et religieuses de Noël
       </h2>
 
@@ -50,7 +50,7 @@ export const VingtCinqDecembre = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi le 25 décembre est-il devenu un jour férié ?
       </h2>
 
@@ -90,7 +90,7 @@ export const VingtCinqDecembre = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Les traditions liées au 25 décembre
       </h2>
 
@@ -130,7 +130,9 @@ export const VingtCinqDecembre = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <CTA />
+
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Le 25 décembre dans le monde
       </h2>
 
@@ -155,9 +157,7 @@ export const VingtCinqDecembre = () => {
         </li>
       </ul>
 
-      <CTA />
-
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Pourquoi le 25 décembre reste essentiel aujourd’hui
       </h2>
 
@@ -193,7 +193,7 @@ export const VingtCinqDecembre = () => {
         </li>
       </ul>
 
-      <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
+      <h2 className="text-lg font-medium leading-tight tracking-tight sm:text-2xl">
         Une fête entre tradition et modernité
       </h2>
 
