@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const CTA = () => {
   return (
-    <div className="space-y-12 rounded-md bg-gradient-to-r from-blue-900 to-blue-700 py-12 text-center text-blue-50">
+    <div className="!my-16 space-y-12 rounded-md bg-gradient-to-r from-blue-900 to-blue-700 py-12 text-center text-blue-50">
       <p className="font-medium leading-tight tracking-tight sm:text-2xl">
         Organisez vos week-ends prolongés dès aujourd’hui !
       </p>
