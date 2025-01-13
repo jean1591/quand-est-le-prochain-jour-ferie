@@ -1,22 +1,28 @@
 import { Ascension } from './components/Ascension'
 import { HuitMai } from './components/HuitMai'
 import { Metadata } from 'next'
+import { OnzeNovembre } from './components/OnzeNovembre'
 import { Paques } from './components/Paques'
 import { Pentecote } from './components/Pentecote'
 import { PremierJanvier } from './components/PremierJanvier'
 import { PremierMai } from './components/PremierMai'
+import { PremierNovembre } from './components/PremierNovembre'
 import { QuatorzeJuillet } from './components/QuatorzeJuillet'
 import { QuinzeAout } from './components/QuinzeAout'
+import { VingtCinqDecembre } from './components/VingtCinqDecembre'
 import { metadata } from '@/app/layout'
 
 type BankHolidayName =
+  | '11 novembre'
   | '14 juillet'
   | '15 aout'
   | '1er janvier'
   | '1er mai'
+  | '1er novembre'
+  | '25 decembre'
   | '8 mai'
-  | 'lundi de paques'
   | 'ascension'
+  | 'lundi de paques'
   | 'pentecote'
 
 interface Props {
@@ -36,10 +42,13 @@ const deslugify = (slug: string): BankHolidayName => {
 }
 
 const holidayMapper: HolidayMapperType = {
+  '11 novembre': OnzeNovembre,
   '14 juillet': QuatorzeJuillet,
   '15 aout': QuinzeAout,
   '1er janvier': PremierJanvier,
   '1er mai': PremierMai,
+  '1er novembre': PremierNovembre,
+  '25 decembre': VingtCinqDecembre,
   '8 mai': HuitMai,
   'lundi de paques': Paques,
   ascension: Ascension,
@@ -47,10 +56,13 @@ const holidayMapper: HolidayMapperType = {
 }
 
 const leLaMapper: Record<BankHolidayName, 'le' | 'la' | "l'"> = {
+  '11 novembre': 'le',
   '14 juillet': 'le',
   '15 aout': 'le',
   '1er janvier': 'le',
   '1er mai': 'le',
+  '1er novembre': 'le',
+  '25 decembre': 'le',
   '8 mai': 'le',
   'lundi de paques': 'le',
   ascension: "l'",

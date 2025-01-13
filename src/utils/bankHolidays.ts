@@ -66,7 +66,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: '2024-12-25',
       description: 'Jour de Noël',
       emoji: '🌲',
-      link: 'blog/pourquoi-le-24-decembre-est-ferie',
+      link: 'blog/pourquoi-le-25-decembre-est-ferie',
     },
   ],
   '2025': [
@@ -134,7 +134,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: '2025-12-25',
       description: 'Jour de Noël',
       emoji: '🎄',
-      link: 'blog/pourquoi-le-24-decembre-est-ferie',
+      link: 'blog/pourquoi-le-25-decembre-est-ferie',
     },
   ],
   '2026': [
@@ -202,7 +202,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: '2026-12-25',
       description: 'Jour de Noël',
       emoji: '🌲',
-      link: 'blog/pourquoi-le-24-decembre-est-ferie',
+      link: 'blog/pourquoi-le-25-decembre-est-ferie',
     },
   ],
   '2027': [
@@ -270,7 +270,7 @@ export const bankHolidays: Record<string, BankHoliday[]> = {
       date: '2027-12-25',
       description: 'Jour de Noël',
       emoji: '🌲',
-      link: 'blog/pourquoi-le-24-decembre-est-ferie',
+      link: 'blog/pourquoi-le-25-decembre-est-ferie',
     },
   ],
 }
