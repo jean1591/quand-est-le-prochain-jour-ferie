@@ -55,31 +55,19 @@ const holidayMapper: HolidayMapperType = {
   pentecote: Pentecote,
 }
 
-const leLaMapper: Record<BankHolidayName, 'le' | 'la' | "l'"> = {
-  '11 novembre': 'le',
-  '14 juillet': 'le',
-  '15 aout': 'le',
-  '1er janvier': 'le',
-  '1er mai': 'le',
-  '1er novembre': 'le',
-  '25 decembre': 'le',
-  '8 mai': 'le',
-  'lundi de paques': 'le',
-  ascension: "l'",
-  pentecote: 'la',
+const capitalize = (sentence: string): string => {
+  return (
+    sentence.charAt(0).toUpperCase() + sentence.replaceAll('-', ' ').slice(1)
+  )
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const canonicalUrl = `https://quand-est-le-prochain-jour-ferie.fr/blog/${params.slug}`
-
-  const bankHoliday = deslugify(params.slug)
-
   return {
     ...metadata,
-    title: `Pourquoi ${leLaMapper[bankHoliday]} ${bankHoliday} est férié ?`,
-    description: `Découvrez pourquoi ${leLaMapper[bankHoliday]} ${bankHoliday} est férié en France. Explorez l'histoire et les traditions derrière cette journée de célébration.`,
+    title: capitalize(params.slug.replaceAll('-', ' ')),
+    description: `Découvrez ${params.slug.replaceAll('-', ' ')} en France. Explorez l'histoire et les traditions derrière cette journée de célébration.`,
     alternates: {
-      canonical: canonicalUrl,
+      canonical: `https://quand-est-le-prochain-jour-ferie.fr/blog/${params.slug}`,
     },
   }
 }
