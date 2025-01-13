@@ -79,7 +79,7 @@ export default function ExplicationPage({ params }: Props) {
     holidayMapper[selectedBankHoliday.toLowerCase()] || null
 
   return (
-    <div className="mx-auto max-w-5xl px-4">
+    <div className="mx-auto max-w-3xl px-4">
       {HolidayComponent ? (
         <HolidayComponent />
       ) : (
