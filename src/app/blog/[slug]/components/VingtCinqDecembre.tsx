@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const VingtCinqDecembre = () => {
   return (
@@ -7,13 +8,7 @@ export const VingtCinqDecembre = () => {
         Pourquoi le 25 décembre est un jour férié ?
       </h1>
 
-      <p>
-        Le 25 décembre est bien plus qu’une simple date sur le calendrier. Ce
-        jour, ancré dans nos traditions et nos habitudes, revêt une importance
-        particulière, tant sur le plan religieux que culturel. Mais pourquoi
-        est-il férié ? Découvrons ensemble l’histoire, les traditions et les
-        raisons contemporaines de cette journée unique.
-      </p>
+      <TLDR text="Le 25 décembre est férié pour célébrer Noël, la naissance de Jésus-Christ, un événement fondamental pour le christianisme. Cette fête est l'occasion de se rassembler en famille et de célébrer l'esprit de partage, de générosité et de paix." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques et religieuses de Noël

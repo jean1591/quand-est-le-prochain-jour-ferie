@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const Ascension = () => {
   return (
@@ -7,15 +8,7 @@ export const Ascension = () => {
         Pourquoi l'Ascension est fériée ?
       </h1>
 
-      <p>
-        Chaque année, au mois de mai, un jeudi attire l’attention en France : le
-        jour de l’Ascension. Mais que savons-nous vraiment de cette journée, à
-        part qu’elle nous offre un repos bien mérité ou, pour les chanceux, un
-        long week-end grâce au "pont" ? Derrière cette fête chrétienne se cache
-        une histoire riche et des traditions anciennes. Dans cet article, nous
-        vous invitons à découvrir pourquoi l’Ascension est fériée en France,
-        tout en explorant son origine et son importance.
-      </p>
+      <TLDR text="L'Ascension est un jour férié chrétien célébrant l'élévation de Jésus-Christ au ciel, 40 jours après sa résurrection. Il marque un moment clé dans la tradition chrétienne et est observé comme un signe de l'espoir et de la foi chrétienne." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Origines religieuses de l’Ascension

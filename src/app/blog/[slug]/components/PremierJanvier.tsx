@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const PremierJanvier = () => {
   return (
@@ -7,14 +8,7 @@ export const PremierJanvier = () => {
         Pourquoi le 1er Janvier est férié ?
       </h1>
 
-      <p>
-        Le 1er janvier est un jour marqué dans le calendrier de nombreux pays
-        comme étant à la fois symbolique et férié. Mais au-delà des célébrations
-        festives et des bonnes résolutions, savez-vous vraiment pourquoi ce jour
-        est si spécial ? Cet article explore les origines historiques, les
-        traditions françaises et internationales, ainsi que des anecdotes
-        intéressantes sur cette date emblématique.
-      </p>
+      <TLDR text="Le 1er janvier est férié pour célébrer le Nouvel An. Cette tradition a des racines dans le calendrier romain et chrétien, marquant le début de l'année civile. Bien que célébrée de manière mondiale, sa signification varie selon les cultures et les religions." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Le début de l’année, un jour à part

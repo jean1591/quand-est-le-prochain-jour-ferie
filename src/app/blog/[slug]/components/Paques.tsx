@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const Paques = () => {
   return (
@@ -7,15 +8,7 @@ export const Paques = () => {
         Pourquoi le Lundi de Pâques est férié ?
       </h1>
 
-      <p>
-        Le Lundi de Pâques, ce jour férié tant attendu qui prolonge le week-end
-        pascal, est une tradition bien ancrée dans nos calendriers. Mais
-        pourquoi ce jour est-il férié ? Ses origines sont bien plus riches qu’il
-        n’y paraît, mêlant histoire, religion et traditions. Découvrez dans cet
-        article tout ce que vous devez savoir sur le Lundi de Pâques, et
-        pourquoi il continue d’être une journée importante dans de nombreux
-        pays.
-      </p>
+      <TLDR text="Le Lundi de Pâques est un jour férié en France pour commémorer la résurrection de Jésus-Christ, un événement majeur dans le christianisme. Il clôture les festivités pascales et marque un temps de réflexion et de célébration spirituelle pour les croyants." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Des origines religieuses

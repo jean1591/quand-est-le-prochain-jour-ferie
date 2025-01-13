@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const Pentecote = () => {
   return (
@@ -7,13 +8,7 @@ export const Pentecote = () => {
         Pourquoi la Pentecôte est fériée ?
       </h1>
 
-      <p>
-        Chaque année, le lundi de Pentecôte offre un jour férié que beaucoup
-        perçoivent comme une simple occasion de repos ou de rassemblement
-        familial. Pourtant, derrière cette journée chômée se cache une fête aux
-        origines profondément ancrées dans l’histoire et la spiritualité
-        chrétienne.
-      </p>
+      <TLDR text="La Pentecôte est un jour férié chrétien qui commémore la descente du Saint-Esprit sur les apôtres, marquant ainsi le début de l'Église chrétienne. Cette fête, célébrée 50 jours après Pâques, est symbolique de la diffusion du message chrétien." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines religieuses de la Pentecôte

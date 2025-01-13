@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const QuatorzeJuillet = () => {
   return (
@@ -7,13 +8,7 @@ export const QuatorzeJuillet = () => {
         Pourquoi le 14 Juillet est férié ?
       </h1>
 
-      <p>
-        Feux d’artifice, défilés, bals populaires... Le 14 juillet est une date
-        emblématique en France. Mais au-delà des festivités, cette journée
-        commémore des événements historiques qui ont façonné l’identité
-        française. Découvrons ensemble les origines, le symbolisme et les
-        traditions qui entourent cette fête nationale.
-      </p>
+      <TLDR text="Le 14 juillet commémore la prise de la Bastille en 1789, un événement majeur de la Révolution française. Ce jour férié symbolise la fin de l'absolutisme et le début des idéaux républicains, incarnant la liberté, l'égalité et la fraternité." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques du 14 juillet

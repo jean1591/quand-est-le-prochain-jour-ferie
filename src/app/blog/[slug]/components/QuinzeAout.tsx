@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const QuinzeAout = () => {
   return (
@@ -7,14 +8,7 @@ export const QuinzeAout = () => {
         Pourquoi le 15 août est férié ?
       </h1>
 
-      <p>
-        Le 15 août, un jour férié situé au cœur de l’été, évoque pour beaucoup
-        des vacances, des réunions familiales et des moments de détente. Mais
-        cette date porte en réalité une forte signification historique et
-        religieuse. D’où vient cette tradition, et pourquoi est-elle encore
-        célébrée aujourd’hui ? Plongeons dans l’histoire fascinante de cette
-        journée particulière.
-      </p>
+      <TLDR text="Le 15 août est férié pour célébrer l'Assomption de la Vierge Marie, un événement important dans la foi chrétienne. Ce jour marque la montée au ciel de la Vierge Marie, un symbole d'espoir pour les croyants." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines religieuses du 15 août

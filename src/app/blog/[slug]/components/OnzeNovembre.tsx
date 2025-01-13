@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const OnzeNovembre = () => {
   return (
@@ -7,14 +8,7 @@ export const OnzeNovembre = () => {
         Pourquoi le 11 novembre est-il férié ?
       </h1>
 
-      <p>
-        Le 11 novembre, une date profondément ancrée dans l’histoire française,
-        est bien plus qu’un simple jour férié. Elle nous rappelle les sacrifices
-        des générations passées, marque la fin d’un conflit mondial dévastateur,
-        et invite à perpétuer la mémoire de ceux qui ont combattu pour la
-        liberté. Mais d’où vient cette commémoration ? Pourquoi est-elle si
-        importante ?
-      </p>
+      <TLDR text="Le 11 novembre est férié pour commémorer l'armistice de la Première Guerre mondiale, signé en 1918. Cette journée rend hommage aux soldats tombés pour la France et célèbre la paix retrouvée après des années de conflit." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques du 11 novembre

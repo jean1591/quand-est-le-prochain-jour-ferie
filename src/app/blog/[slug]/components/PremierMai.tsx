@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const PremierMai = () => {
   return (
@@ -7,14 +8,7 @@ export const PremierMai = () => {
         Pourquoi le 1er Mai est férié ?
       </h1>
 
-      <p>
-        Le 1er mai est l’un des jours fériés les plus attendus en France. Chaque
-        année, il est synonyme de repos pour les travailleurs, de muguet offert
-        et parfois de manifestations. Mais pourquoi ce jour est-il férié ? D’où
-        vient cette tradition, et pourquoi est-elle si importante ? Dans cet
-        article, plongeons dans l’histoire, les traditions et la signification
-        actuelle de cette journée emblématique.
-      </p>
+      <TLDR text="Le 1er mai est célébré comme la Fête du Travail, une journée de revendications sociales et de célébration des droits des travailleurs. Initialement liée à la lutte ouvrière au XIXe siècle, elle a été instituée comme jour férié en France pour honorer les progrès sociaux et économiques." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Les origines historiques

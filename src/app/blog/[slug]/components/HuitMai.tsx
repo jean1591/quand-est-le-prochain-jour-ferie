@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const HuitMai = () => {
   return (
@@ -7,14 +8,7 @@ export const HuitMai = () => {
         Pourquoi le 8 Mai est férié ?
       </h1>
 
-      <p>
-        Le 8 mai est une journée bien connue pour être fériée en France. Si
-        beaucoup profitent de ce jour pour se reposer ou passer du temps en
-        famille, il s'agit avant tout d'une date hautement symbolique. Cette
-        journée commémore la fin de la Seconde Guerre mondiale en Europe et rend
-        hommage à ceux qui ont combattu pour la liberté. Plongeons ensemble dans
-        l’histoire et les traditions associées à cette date marquante.
-      </p>
+      <TLDR text="Le 8 mai marque la fin de la Seconde Guerre mondiale en Europe avec la capitulation de l'Allemagne en 1945. Ce jour est férié pour commémorer la victoire sur le nazisme et honorer les soldats et civils qui ont lutté pour la paix." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         La fin de la Seconde Guerre mondiale

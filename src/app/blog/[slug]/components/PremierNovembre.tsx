@@ -1,4 +1,5 @@
 import { CTA } from './CTA'
+import { TLDR } from './TLDR'
 
 export const PremierNovembre = () => {
   return (
@@ -7,12 +8,7 @@ export const PremierNovembre = () => {
         Pourquoi le 1er novembre est férié ?
       </h1>
 
-      <p>
-        Le 1er novembre, jour de la Toussaint, est un moment de l'année où la
-        France s'arrête pour réfléchir, se recueillir et honorer ses proches
-        disparus. Mais au-delà des traditions religieuses et familiales,
-        pourquoi cette date est-elle devenue un jour férié en France ?
-      </p>
+      <TLDR text="Le 1er novembre est la Toussaint, une fête catholique honorant tous les saints et martyrs. Ce jour est l'occasion de se souvenir des défunts et de célébrer la sainteté de ceux qui ont mené une vie exemplaire." />
 
       <h2 className="font-medium leading-tight tracking-tight sm:text-2xl">
         Origines historiques et religieuses du 1er novembre
