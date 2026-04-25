@@ -1,17 +1,19 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export const NavBar = () => {
   return (
-    <div className="h-20 bg-blue-50/25 text-xl font-normal">
-      <div className="h-full px-4 mx-auto max-w-5xl flex items-center justify-center sm:justify-between font-bold leading-none tracking-tight">
-        <Link href="/">Quand est le prochain jour férié ?</Link>
+    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/90 shadow-sm backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <Link href="/" className="text-xl font-bold tracking-tight text-primary">
+          Quand est le prochain jour férié ?
+        </Link>
 
-        <div className="hidden sm:block">
-          <Link href="/a-propos" className="border-b-2 border-blue-900">
+        <nav className="hidden sm:block">
+          <Link href="/a-propos" className="text-sm font-medium text-on-surface-variant">
             À propos
           </Link>
-        </div>
+        </nav>
       </div>
-    </div>
-  );
-};
+    </header>
+  )
+}

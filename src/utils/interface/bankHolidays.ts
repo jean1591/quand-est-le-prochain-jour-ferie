@@ -3,4 +3,5 @@ export interface BankHoliday {
   description: string
   emoji: string
   link: string
+  image: string
 }

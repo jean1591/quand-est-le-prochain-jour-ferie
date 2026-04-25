@@ -1,0 +1,515 @@
+<!doctype html>
+
+<html class="light" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'surface-dim': '#cbdbf5',
+              'surface-container': '#e5eeff',
+              'secondary-fixed-dim': '#ffb95a',
+              'on-tertiary-fixed-variant': '#005230',
+              'on-tertiary': '#ffffff',
+              'on-primary': '#ffffff',
+              'primary-fixed': '#cee5ff',
+              'tertiary-container': '#55b57f',
+              'primary-container': '#5da9e9',
+              'outline-variant': '#c0c7d1',
+              'surface-container-lowest': '#ffffff',
+              'tertiary-fixed-dim': '#7adaa1',
+              'inverse-surface': '#213145',
+              'inverse-on-surface': '#eaf1ff',
+              'inverse-primary': '#96ccff',
+              'error-container': '#ffdad6',
+              secondary: '#845400',
+              background: '#f8f9ff',
+              surface: '#f8f9ff',
+              'secondary-container': '#feb246',
+              'on-background': '#0b1c30',
+              'secondary-fixed': '#ffddb6',
+              'on-primary-fixed-variant': '#004a76',
+              'surface-variant': '#d3e4fe',
+              'surface-tint': '#00639a',
+              'primary-fixed-dim': '#96ccff',
+              'on-secondary-fixed': '#2a1800',
+              'on-tertiary-fixed': '#002110',
+              'on-tertiary-container': '#004326',
+              'on-secondary-container': '#6f4600',
+              tertiary: '#006d41',
+              'on-secondary-fixed-variant': '#643f00',
+              error: '#ba1a1a',
+              'on-error': '#ffffff',
+              'surface-bright': '#f8f9ff',
+              'on-secondary': '#ffffff',
+              'surface-container-low': '#eff4ff',
+              'tertiary-fixed': '#95f7bb',
+              'on-error-container': '#93000a',
+              'surface-container-high': '#dce9ff',
+              'on-surface': '#0b1c30',
+              primary: '#00639a',
+              'surface-container-highest': '#d3e4fe',
+              'on-primary-fixed': '#001d32',
+              outline: '#707881',
+              'on-primary-container': '#003c61',
+              'on-surface-variant': '#404750',
+            },
+            borderRadius: {
+              DEFAULT: '0.25rem',
+              lg: '0.5rem',
+              xl: '0.75rem',
+              full: '9999px',
+            },
+            spacing: {
+              md: '24px',
+              lg: '40px',
+              xs: '4px',
+              sm: '12px',
+              xl: '64px',
+              gutter: '20px',
+              base: '8px',
+              margin: '24px',
+            },
+            fontFamily: {
+              'body-lg': ['Plus Jakarta Sans'],
+              'headline-md': ['Plus Jakarta Sans'],
+              'label-md': ['Plus Jakarta Sans'],
+              'headline-lg': ['Plus Jakarta Sans'],
+              'body-md': ['Plus Jakarta Sans'],
+              'label-sm': ['Plus Jakarta Sans'],
+              'headline-xl': ['Plus Jakarta Sans'],
+            },
+            fontSize: {
+              'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+              'headline-md': [
+                '24px',
+                { lineHeight: '32px', fontWeight: '600' },
+              ],
+              'label-md': [
+                '14px',
+                {
+                  lineHeight: '20px',
+                  letterSpacing: '0.01em',
+                  fontWeight: '600',
+                },
+              ],
+              'headline-lg': [
+                '32px',
+                {
+                  lineHeight: '40px',
+                  letterSpacing: '-0.01em',
+                  fontWeight: '700',
+                },
+              ],
+              'body-md': ['16px', { lineHeight: '24px', fontWeight: '400' }],
+              'label-sm': ['12px', { lineHeight: '16px', fontWeight: '500' }],
+              'headline-xl': [
+                '40px',
+                {
+                  lineHeight: '48px',
+                  letterSpacing: '-0.02em',
+                  fontWeight: '700',
+                },
+              ],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #f8f9ff;
+      }
+    </style>
+  </head>
+  <body class="text-on-background">
+    <!-- TopAppBar -->
+    <header
+      class="docked full-width sticky top-0 z-50 border-b border-gray-100 bg-white/90 shadow-sm backdrop-blur-md dark:border-gray-800 dark:bg-gray-900/90"
+    >
+      <div
+        class="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4"
+      >
+        <div
+          class="text-xl font-bold tracking-tight text-blue-600 dark:text-blue-400"
+        >
+          Le Temps Retrouvé
+        </div>
+        <nav class="hidden items-center gap-8 md:flex">
+          <a
+            class="font-plus-jakarta-sans border-b-2 border-blue-600 text-sm font-medium text-blue-600 transition-colors duration-500 dark:text-blue-400"
+            href="#"
+            >Holidays</a
+          >
+          <a
+            class="font-plus-jakarta-sans text-sm font-medium text-gray-500 transition-colors duration-500 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-800"
+            href="#"
+            >Planner</a
+          >
+          <a
+            class="font-plus-jakarta-sans text-sm font-medium text-gray-500 transition-colors duration-500 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-800"
+            href="#"
+            >Explore</a
+          >
+          <a
+            class="font-plus-jakarta-sans text-sm font-medium text-gray-500 transition-colors duration-500 hover:bg-gray-50 dark:text-gray-400 dark:hover:bg-gray-800"
+            href="#"
+            >Profile</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            class="rounded-full p-2 text-gray-500 transition-colors hover:bg-gray-100"
+          >
+            <span class="material-symbols-outlined" data-icon="calendar_month"
+              >calendar_month</span
+            >
+          </button>
+          <button
+            class="rounded-full p-2 text-gray-500 transition-colors hover:bg-gray-100"
+          >
+            <span class="material-symbols-outlined" data-icon="notifications"
+              >notifications</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="mx-auto max-w-7xl px-6 py-12">
+      <!-- Hero Section -->
+      <section class="mb-xl relative">
+        <div
+          class="border-surface-container overflow-hidden rounded-xl border bg-white shadow-[0_8px_30px_rgb(0,99,154,0.12)]"
+        >
+          <div class="flex flex-col md:flex-row">
+            <div class="p-md md:p-lg flex flex-col justify-center md:w-1/2">
+              <div
+                class="bg-primary-container/20 text-primary mb-md inline-flex w-fit items-center gap-2 rounded-full px-3 py-1"
+              >
+                <span
+                  class="material-symbols-outlined text-[18px]"
+                  data-icon="event"
+                  >event</span
+                >
+                <span class="font-label-md text-label-md"
+                  >Prochain Jour Férié</span
+                >
+              </div>
+              <h1
+                class="font-headline-xl text-headline-xl text-on-surface mb-sm"
+              >
+                01 Mai - Fête du Travail
+              </h1>
+              <p
+                class="font-body-lg text-body-lg text-primary mb-lg font-semibold"
+              >
+                Dans 6 jours, week-end de 3 jours 🥳
+              </p>
+              <div class="flex gap-4">
+                <button
+                  class="bg-primary text-on-primary px-lg py-sm font-label-md shadow-primary/20 rounded-xl shadow-lg transition-all duration-300 hover:opacity-90"
+                >
+                  Organiser mon séjour
+                </button>
+                <button
+                  class="border-outline-variant text-on-surface px-lg py-sm font-label-md hover:bg-surface-container rounded-xl border transition-all duration-300"
+                >
+                  Voir les détails
+                </button>
+              </div>
+            </div>
+            <div class="relative min-h-[300px] md:w-1/2">
+              <img
+                alt="French countryside"
+                class="absolute inset-0 h-full w-full object-cover"
+                data-alt="Dreamy landscape of a French village with stone houses and blooming wisteria under a soft morning spring light"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE-PTE7s4qYudklZRHFHkMFiJ-TP09gFMBLimuSEAi4Ze3uhDjp-5HDa6O4LBbc9xm7Dum69K4cibj5EzlGZtpfcsXsydHmlo1vLoqB0L5WnH1pvDnaoCS4uhFQZl0HsX48Tv-CIRwDqtU3q0yoYn-_6dZ9NWXZH-Q7QT2L2h9OP9gNLuCzIupY7c8uO7dEnCYxaoqIDtt8zr2bvJDhkljFDMadfPYudygfa86pp7mxjAqAYImSh-a4R5UPhjVe_LqS9GJEtIAOpAr"
+              />
+              <div
+                class="absolute inset-0 hidden bg-gradient-to-r from-white via-transparent to-transparent md:block"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Upcoming Holidays List (Asymmetric Bento Grid style) -->
+      <section>
+        <div class="mb-lg flex items-end justify-between">
+          <div>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">
+              Calendrier 2026
+            </h2>
+            <p class="font-body-md text-on-surface-variant">
+              Préparez vos moments de détente pour l'année prochaine.
+            </p>
+          </div>
+          <button class="text-primary font-label-md hover:underline">
+            Voir tout le calendrier
+          </button>
+        </div>
+        <div class="gap-md grid grid-cols-1 md:grid-cols-3">
+          <!-- Large Card -->
+          <div
+            class="bg-surface-container-low p-md border-surface-variant group flex flex-col justify-between rounded-xl border transition-all duration-500 hover:shadow-md md:col-span-2"
+          >
+            <div class="flex items-start justify-between">
+              <div>
+                <span class="font-label-sm text-primary mb-xs block"
+                  >01 JANVIER 2026</span
+                >
+                <h3 class="font-headline-md text-headline-md">Jour de l'An</h3>
+              </div>
+              <div class="p-sm rounded-lg bg-white shadow-sm">
+                <span class="text-headline-md text-primary font-bold">245</span>
+                <span
+                  class="text-outline block text-center text-[10px] uppercase tracking-wider"
+                  >Jours</span
+                >
+              </div>
+            </div>
+            <div class="mt-lg flex items-center gap-4">
+              <div class="flex -space-x-3">
+                <img
+                  alt="user"
+                  class="h-10 w-10 rounded-full border-2 border-white object-cover"
+                  data-alt="Portrait of a young smiling woman"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfQg18-Ae2b7d0LFmZKlwKJBCEcktuDiHbko62m118Ve6zugUcRM-82EGwAuVUhwoIibZ3GvzOQxv8ODLO9uMEdkjQJvJxjJTw3nUSLw4MkpNwfi2T9h8BGpKipwqBgWNV5pLrD7qv3rzYiCzmkCB94XFCou7eJSY7YTw9g9bd6dl2Tadhlcn9flvTz-_OknSPUl0YJO_ki5pSIS4KukgRSujp6WiUqlDMMd-G6-Et_I6MDrcJ4-VjNV9OPFDcf_yMjbNBIUr5ugSa"
+                />
+                <img
+                  alt="user"
+                  class="h-10 w-10 rounded-full border-2 border-white object-cover"
+                  data-alt="Portrait of a professional man"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6vnvkBZKcfTFqd4V0PzwqcAe3jMFx9JQarC75b8DWyvKd0Y3Nmw7Rgq9MNaWJBRWbo0ocYJjSQzbWGFykRjP5SMMkqcG3GZgnqB5yeMIFW7g1LM7uvgqH9RdESXQqIRwfuSzDTNbB_G9CL7KGhz8uuvvYx798sXOl-9w9IY7eOVBYlGYA_eR7zn9tWQvM_IiTNbbIIbUNSvcEUEeuDfxufZTCITjvVJgoR1chcc3wu4F9gI7AbKm-BMrBwiHJjVsz-TE22F8ZSs_a"
+                />
+                <div
+                  class="bg-surface-dim text-primary flex h-10 w-10 items-center justify-center rounded-full border-2 border-white text-xs font-bold"
+                >
+                  +12
+                </div>
+              </div>
+              <span class="text-label-sm text-on-surface-variant"
+                >amis planifient déjà ce séjour</span
+              >
+            </div>
+          </div>
+          <!-- Small Card -->
+          <div
+            class="p-md flex flex-col justify-between rounded-xl border border-gray-100 bg-white shadow-sm transition-all duration-500 hover:shadow-md"
+          >
+            <div>
+              <span class="font-label-sm text-secondary-container mb-xs block"
+                >06 AVRIL 2026</span
+              >
+              <h3 class="font-headline-md text-headline-md">Lundi de Pâques</h3>
+            </div>
+            <div class="mt-lg flex items-center justify-between">
+              <span class="text-body-md text-on-surface-variant"
+                >340 jours restants</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary-container"
+                data-icon="auto_awesome_motion"
+                >auto_awesome_motion</span
+              >
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="p-md flex flex-col justify-between rounded-xl border border-gray-100 bg-white shadow-sm transition-all duration-500 hover:shadow-md"
+          >
+            <div>
+              <span class="font-label-sm text-tertiary mb-xs block"
+                >08 MAI 2026</span
+              >
+              <h3 class="font-headline-md text-headline-md">Victoire 1945</h3>
+            </div>
+            <div class="mt-lg flex items-center justify-between">
+              <span class="text-body-md text-on-surface-variant"
+                >372 jours restants</span
+              >
+              <span
+                class="material-symbols-outlined text-tertiary"
+                data-icon="explore"
+                >explore</span
+              >
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="p-md flex flex-col justify-between rounded-xl border border-gray-100 bg-white shadow-sm transition-all duration-500 hover:shadow-md"
+          >
+            <div>
+              <span class="font-label-sm text-primary mb-xs block"
+                >14 MAI 2026</span
+              >
+              <h3 class="font-headline-md text-headline-md">Ascension</h3>
+            </div>
+            <div class="mt-lg flex items-center justify-between">
+              <span class="text-body-md text-on-surface-variant"
+                >378 jours restants</span
+              >
+              <span
+                class="material-symbols-outlined text-primary"
+                data-icon="event"
+                >event</span
+              >
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="p-md flex flex-col justify-between rounded-xl border border-gray-100 bg-white shadow-sm transition-all duration-500 hover:shadow-md"
+          >
+            <div>
+              <span class="font-label-sm text-primary mb-xs block"
+                >25 MAI 2026</span
+              >
+              <h3 class="font-headline-md text-headline-md">
+                Lundi de Pentecôte
+              </h3>
+            </div>
+            <div class="mt-lg flex items-center justify-between">
+              <span class="text-body-md text-on-surface-variant"
+                >389 jours restants</span
+              >
+              <span
+                class="material-symbols-outlined text-primary"
+                data-icon="person"
+                >person</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section
+        class="mt-xl bg-primary-container/10 p-lg rounded-3xl text-center"
+      >
+        <h2 class="font-headline-lg text-on-primary-container mb-sm">
+          Ne manquez aucun pont en 2026
+        </h2>
+        <p
+          class="font-body-lg text-on-primary-container mb-md mx-auto max-w-2xl"
+        >
+          Synchronisez votre calendrier et recevez des alertes pour poser vos
+          congés au meilleur moment.
+        </p>
+        <div class="flex flex-col justify-center gap-4 sm:flex-row">
+          <button
+            class="bg-primary text-on-primary px-xl py-sm font-label-md shadow-primary/30 rounded-full shadow-lg"
+          >
+            Connecter mon Google Calendar
+          </button>
+          <button
+            class="text-primary px-xl py-sm font-label-md border-primary-container rounded-full border bg-white"
+          >
+            Exporter en PDF
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="full-width mt-20 border-t border-gray-200 bg-gray-50 dark:border-gray-800 dark:bg-gray-900"
+    >
+      <div
+        class="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-6 px-8 py-12 md:flex-row"
+      >
+        <div class="flex flex-col gap-2">
+          <span class="text-xl font-bold text-gray-900 dark:text-gray-100"
+            >Le Temps Retrouvé</span
+          >
+          <p
+            class="font-plus-jakarta-sans text-xs text-gray-500 dark:text-gray-400"
+          >
+            © 2024 Le Temps Retrouvé — The Art of French Leisure.
+          </p>
+        </div>
+        <div class="flex gap-8">
+          <a
+            class="font-plus-jakarta-sans text-xs text-gray-500 underline underline-offset-4 transition-all duration-300 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+            href="#"
+            >Public Holidays</a
+          >
+          <a
+            class="font-plus-jakarta-sans text-xs text-gray-500 underline underline-offset-4 transition-all duration-300 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+            href="#"
+            >Long Weekends</a
+          >
+          <a
+            class="font-plus-jakarta-sans text-xs text-gray-500 underline underline-offset-4 transition-all duration-300 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+            href="#"
+            >Methodology</a
+          >
+          <a
+            class="font-plus-jakarta-sans text-xs text-gray-500 underline underline-offset-4 transition-all duration-300 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400"
+            href="#"
+            >Privacy</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- BottomNavBar (Mobile only) -->
+    <nav
+      class="fixed bottom-0 left-0 z-50 flex w-full items-center justify-around rounded-t-2xl border-t border-gray-100 bg-white px-4 pb-6 pt-3 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] md:hidden dark:border-gray-800 dark:bg-gray-950"
+    >
+      <a
+        class="font-plus-jakarta-sans relative flex flex-col items-center justify-center text-[10px] font-semibold text-blue-600 after:absolute after:-bottom-1 after:h-1 after:w-1 after:rounded-full after:bg-blue-600 after:content-[''] dark:text-blue-400"
+        href="#"
+      >
+        <span class="material-symbols-outlined" data-icon="event">event</span>
+        <span>Holidays</span>
+      </a>
+      <a
+        class="font-plus-jakarta-sans Active:scale-95 flex flex-col items-center justify-center text-[10px] font-semibold text-gray-400 transition-transform duration-200 hover:text-blue-500 dark:text-gray-600"
+        href="#"
+      >
+        <span class="material-symbols-outlined" data-icon="auto_awesome_motion"
+          >auto_awesome_motion</span
+        >
+        <span>Planner</span>
+      </a>
+      <a
+        class="font-plus-jakarta-sans Active:scale-95 flex flex-col items-center justify-center text-[10px] font-semibold text-gray-400 transition-transform duration-200 hover:text-blue-500 dark:text-gray-600"
+        href="#"
+      >
+        <span class="material-symbols-outlined" data-icon="explore"
+          >explore</span
+        >
+        <span>Explore</span>
+      </a>
+      <a
+        class="font-plus-jakarta-sans Active:scale-95 flex flex-col items-center justify-center text-[10px] font-semibold text-gray-400 transition-transform duration-200 hover:text-blue-500 dark:text-gray-600"
+        href="#"
+      >
+        <span class="material-symbols-outlined" data-icon="person">person</span>
+        <span>Profile</span>
+      </a>
+    </nav>
+    <!-- FAB (Suppressed for Home screen search but contextually appropriate for 'Add Event' if needed, here we prioritize clean home view) -->
+  </body>
+</html>

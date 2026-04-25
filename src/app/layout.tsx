@@ -1,13 +1,18 @@
 import './globals.css'
 
 import { Analytics } from '@vercel/analytics/react'
+import { BottomNav } from './component/bottomNav'
 import { Footer } from './component/footer'
-import { Inter } from 'next/font/google'
 import { Metadata } from 'next'
 import { NavBar } from './component/navBar'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import { classNames } from '@/utils'
 
-const inter = Inter({ subsets: ['latin'] })
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-plus-jakarta-sans',
+})
 
 const metaDescription =
   "Retrouver la liste des prochains jours fériés Français ainsi que le nombre de jours jusqu'à ces derniers. Restez informé si le prochain jour ferié offre un week-end de 3 jours ou un pont."
@@ -44,16 +49,18 @@ export default function RootLayout({
     <html lang="fr">
       <body
         className={classNames(
-          inter.className,
-          'flex min-h-screen flex-col bg-blue-50/25 text-blue-900'
+          plusJakartaSans.variable,
+          plusJakartaSans.className,
+          'flex min-h-screen flex-col bg-surface text-on-background'
         )}
       >
         <NavBar />
-        <div className="mb-16 flex-1">
+        <div className="flex-1 pb-16 md:pb-0">
           {children}
           <Analytics />
         </div>
         <Footer />
+        <BottomNav />
       </body>
     </html>
   )
